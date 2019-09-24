@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Documen Object Model</title>
+</head>
+<body>
+    <h1 id="titulo">  Titulo de nuestro sitio web</h1>
+    <div id="subtitulo"></div>
+   <p> 1.- En este parrafo agregamos muchas cosas <b>Esto va en negrita</b>  y continuamos escribiendo y escribiendo el parrafo para despues accceder a el.</p>
+
+   <p id="segundo"> 2.- SEGUNDO PARRAFO, le agrego un Id para acceder a el y saber como se hace.</p>
+
+    <p>3.- Más parrafos etc etc etc etc etc.</p>
+
+   
+   
+   <script>
+        var elementosP = document.getElementsByTagName("p");
+        var segundoParrafo = document.getElementById("segundo");
+
+        // 1.- Crear un elemento
+        var elemento = document.createElement("h2");
+
+        // 2.- Crear un nodo de texto, es decir el contenido 
+        var contenido = document.createTextNode("Este es nuestro titular");
+
+        // 3.- añadir el nodo de texto al elemento
+        elemento.appendChild(contenido);
+
+        // 4.- agregar atributos al elemento
+        elemento.setAttribute("align", "center");
+
+        // 5.- agregar el elemento al documento
+        document.getElementById("subtitulo").appendChild(elemento);
+
+    </script>
+
+</body>
+</html>

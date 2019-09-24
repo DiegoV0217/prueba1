@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+     <script>                //COMENTARIOS Y VARIABLES 
+        var nombre;
+        nombre = prompt("Ingresa tu nombre", "nombre");
+        document.write();
+        alert();
+     </script>
+
+
+     <script>                   // TIPOS DE DATOS
+
+         
+         //numérico
+         var edad = 19.1234;   // no se especifica que tipo de dato es, no es necesario
+
+
+         //String
+        var nombre = "Diego";
+        var apellido = "VIvas";
+        var texto = " vamos a escapar las comillas  \"este texto está entre comillas\"   "
+        document.write(nombre + " " + apellido);
+
+
+        // Array - arreglo
+        var amigos = ["Carlos", "Diego", "Cesar"];
+        document.write(amigos[0]);
+
+
+        //Objetos
+        var objeto = {
+            color: "Black",
+            size: 12
+        }
+
+
+        //boolean
+        var boolean = false; // or true 
+
+
+        //undefined
+        var sinValor;
+        document.write(sinValor);  //mostrara indefinido debido a que no tiene ningún valor
+
+
+        //null
+        var numero2 = 10;                          
+        var numero2 = null;  // se utiliza para quitarle el valor a una variable 
+
+
+        // NaN, valor invalido, sin sentido
+        var texto2 = "Hola como estas?";
+        document.write(texto2 * 2); //mostraría NaN debido a que no se puede multiplicar texto, es decir valor invalido   
+
+     </script>
+
+    <script>                    // ARREGLOS
+
+        var amigos2 = ["Diego", "Manuel", "Andres", "Pepito"];
+
+        document.write(amigos2[10]);  //Se aumenta el valor del array dinámicamente y mosytraria                                        UNDEFINED
+        amigos2[1] = "Pepitoo1"; //así se asigna otro valor
+
+
+    </script>
+
+    <script>                //METODOS y PROPIEDADES PARA LOS ARREGLOS
+
+        var amigos2 = ["Diego", "Manuel", "Andres", "Pepito"];
+
+        document.write("Tienes" + amigos2.length + "amigos");   // length 
+
+        amigos2 [amigos2.length] = "Fernando"; // así se agrega un nuevo valor al array 
+        
+        amigos2.push( "Luis", "Fercho", "Oscar"); //Agrega elementos uno a uno en la ultima posición
+
+        amigos2.pop();  //ELimina el último elemento
+
+        var amigos3 = amigos.concat(amigos2); // CONCATENAR un array después de otro
+
+        document.write(amigos3.join(" - "));  // Mostrar el array separados por lo que se indica en                                                 join
+
+        var ordenados = amigos.sort();  //Ordena los elementos alfabéticamente
+
+
+
+
+    
+    </script>
+
+    <script>                   //CONDICIONALES y OPERADORES
+    
+        var nombre1 = "Carlos",
+            edad1 = 19;
+        
+        if(nombre1 == "Carlos") {
+
+            //instruccionjes
+        }
+        else if(nombre1 == "Diego"){
+            //instrucciones
+        }
+
+        else{
+            //Instrucciones
+        }
+
+        // > mayor que
+        // < menor que
+        // >= mayor o igual
+        // <= menor o igual
+        // == igual que
+        // != distinto de
+        // && and 
+        // || or
+        // === IGUAL QUE, ADEMÁS IGUAL TIPO DE DATO
+       
+    </script>
+
+    <script>                    //CICLO FOR, WHILE Y DO WHILE
+    
+        var dias =["Lunes", "Martes", "Miercoles","Jueves", "Viernes","Sabado","Domingo"];
+        for ( i = 0; i <= dias.length; i++) {
+            document.write(dias[i] + "<br>");
+            
+        }
+
+        a = 0;
+        while (a <= 10) {
+            document.write(i + "<br>")
+            i++;
+        }
+
+        do {
+                //Siempre ejecuta este ciclo primero {}
+        } while (condition){};
+        
+
+
+    </script>
+
+    <script>                    //FUNCIONES
+
+        function suma (numero0, numero3){
+
+            var numero0 = numero0;
+            var numero3 = numero3;
+            return numero0 + numero3;
+           
+        }
+
+        document.write( suma(10, 20) );
+
+
+    </script>
+
+</body>
+</html>

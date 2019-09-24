@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document object model 2</title>
+</head>
+<body>
+    
+    <ol id="lista">
+        <li id="primero"> primer linea.</li>
+        <li> segunda linea.</li>
+    </ol>
+
+    <script>
+        
+        var elemento = document.createElement("li");
+        var contenido = document.createTextNode("Este es el texto del li2");
+        elemento.appendChild(contenido);
+        
+        //elemento.setAttribute("type", "1");
+
+        //var padre=document.getElementById("lista");
+        var padre=document.getElementsByTagName("li")[0].parentNode;
+        var primerElemento= document.getElementsByTagName("li")[0];
+        
+        //padre.appendChild(contenido);                    //Insertar contenido al final
+        //padre.insertBefore(contenido, primerElemento);    //Insertar contenido antes de la posición especificada
+
+        //padre.replaceChild(elemento, primerElemento);          //Reemplazar
+
+        padre.removeChild(primerElemento);                      //Eliminar elementos del DOM
+        
+        
+        
+        
+    </script>
+
+
+</body>
+</html>

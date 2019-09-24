@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EJM Funciones</title>
+</head>
+<body>
+        <form action="">
+
+            <input type="text" id="numero1">
+            <input type="text" id="numero2">
+            <input type="button" value="Sumar" onclick=" document.write( suma() );">
+            
+
+        </form>
+
+        <script>
+            
+            function suma (numero1, numero2){
+
+            var numero1 = parseFloat(document.getElementById("numero1").value);
+            var numero2 = parseFloat(document.getElementById("numero2").value);
+            return numero1 + numero2;
+
+        }
+
+            
+        
+        </script>
+    
+</body>
+</html>

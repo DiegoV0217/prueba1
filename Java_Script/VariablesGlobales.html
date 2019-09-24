@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Scope JavaScript</title>
+</head>
+<body>
+    
+
+        <script>
+        
+            //Variables Globales  - Se acceden desde cualquier parte del código
+            //Variables Locales   - Variables creadas dentro de una funcion y se pueden acceder desde esa función o una funcion anidada.
+
+
+            var variableGlobal = "Esta es una variable Global";
+
+            var miFuncion = function(){
+                var variableLocal = "Esta variable es Local"; //así se escribe una variable local, dentro de una función
+                variableGlobal2 = "Esta variable es global2";  // así se declara una variable global dentrod de una funcion
+                alert(variableLocal);
+            }
+
+            miFuncion();
+        
+        </script>
+
+
+</body>
+</html>
+
